@@ -37,7 +37,6 @@ public class TexturePackList {
 		ArrayList arraylist = new ArrayList();
 		selectedTexturePack = null;
 		arraylist.add(defaultTexturePack);
-		/*
 		if (texturePackDir.exists() && texturePackDir.isDirectory()) {
 			File afile[] = texturePackDir.listFiles();
 			File afile1[] = afile;

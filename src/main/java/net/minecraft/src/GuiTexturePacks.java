@@ -20,7 +20,7 @@ public class GuiTexturePacks extends GuiScreen {
 				stringtranslate.translateKey("texturePack.openFolder")));
 		controlList.add(new GuiSmallButton(6, width / 2 + 4, height - 48, stringtranslate.translateKey("gui.done")));
 		mc.texturePackList.func_6532_a();
-		//field_6453_p = (new File(Minecraft.getMinecraftDir(), "texturepacks")).getAbsolutePath();
+		field_6453_p = (new File(Minecraft.getMinecraftDir(), "texturepacks")).getAbsolutePath();
 		field_22128_k = new GuiTexturePackSlot(this);
 		field_22128_k.func_22240_a(controlList, 7, 8);
 	}

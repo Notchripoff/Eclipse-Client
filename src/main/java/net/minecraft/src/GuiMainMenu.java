@@ -22,7 +22,7 @@ public class GuiMainMenu extends GuiScreen {
 	
 	public GuiMainMenu() {
 		updateCounter = 0.0F;
-		splashText = "Singleplayer!";
+		splashText = "What the dog doin?";
 	}
 
 	public void updateScreen() {
@@ -46,7 +46,7 @@ public class GuiMainMenu extends GuiScreen {
 		int i = height / 4 + 48;
 		controlList.add(new GuiButton(1, width / 2 - 100, i, stringtranslate.translateKey("menu.singleplayer")));
 		controlList.add(new GuiButton(2, width / 2 - 100, i + 24, stringtranslate.translateKey("menu.multiplayer")));
-		//controlList.add(new GuiButton(3, width / 2 - 100, i + 48, stringtranslate.translateKey("menu.mods")));
+		controlList.add(new GuiButton(3, width / 2 - 100, i + 48, stringtranslate.translateKey("menu.mods")));
 		if (mc.hideQuitButton) {
 			controlList.add(new GuiButton(0, width / 2 - 100, i + 72, stringtranslate.translateKey("menu.options")));
 		} else {
@@ -69,9 +69,9 @@ public class GuiMainMenu extends GuiScreen {
 			//mc.displayGuiScreen(new GuiNoMultiplayer(this));
 			mc.displayGuiScreen(new GuiMultiplayer(this));
 		}
-		//if (guibutton.id == 3) {
-		//	mc.displayGuiScreen(new GuiTexturePacks(this));
-		//}
+		if (guibutton.id == 3) {
+			mc.displayGuiScreen(new GuiTexturePacks(this));
+		}
 		if (guibutton.id == 4) {
 			//mc.displayGuiScreen(new GuiNoMultiplayer(this));
 			mc.displayGuiScreen(new GuiScreenEditProfile(this));
@@ -93,7 +93,7 @@ public class GuiMainMenu extends GuiScreen {
 		EaglerAdapter.glScalef(f1, f1, f1);
 		drawCenteredString(fontRenderer, splashText, 0, -8, 0xffff00);
 		EaglerAdapter.glPopMatrix();
-		drawString(fontRenderer, "Minecraft Beta 1.3_01", 2, 2, 0x505050);
+		drawString(fontRenderer, "Eclipse Beta 1.3_01", 2, 2, 0x505050);
 		//String s = "Copyright Mojang AB. Do not distribute.";
 		String s = "site resources - Copyright Mojang AB.";
 		drawString(fontRenderer, s, width - fontRenderer.getStringWidth(s) - 2, height - 10, 0xffffff);
@@ -188,7 +188,7 @@ public class GuiMainMenu extends GuiScreen {
 					EaglerAdapter.glTranslatef(j1, i1, f1);
 					EaglerAdapter.glScalef(f2, f2, f2);
 					EaglerAdapter.glRotatef(f4, 0.0F, 1.0F, 0.0F);
-					renderblocks.func_1238_a(Block.stone, f3);
+					renderblocks.func_1238_a(Block.snow, f3);
 					EaglerAdapter.glPopMatrix();
 				}
 
@@ -220,11 +220,11 @@ public class GuiMainMenu extends GuiScreen {
 			" *   * * *   * *** *** * * * * *    * " };
 	*/
 	String minecraftLogo[] = { 
-			" ### ### ### #   ### ### ### ### ### ### ###",
-            " #   # # #   #   #   # # #   # # # # #    # ",
-			" ##  ### #   #   ##  ##  #   ##  ### ##   # ",
-			" #   # # # # #   #   # # #   # # # # #    # ",
-			" ### # # ### ### ### # # ### # # # # #    # " };
+			" ### ### #   # ### ### ### ",
+            " #   # # #   #   #   #   # # # #   #   ",
+			" ##  #   #   # ### ### ### ",
+			" #   #   #   # #     # #   ",
+			" ### ### ### # #   ### ### " };
 	private LogoEffectRandomizer logoEffects[][];
 	private float updateCounter;
 	private String splashText;

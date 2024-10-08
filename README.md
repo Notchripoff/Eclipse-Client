@@ -1,4 +1,5 @@
-# Eclipse Client
+# ![minecraft_title (6)](https://github.com/user-attachments/assets/67749d85-7aee-4f41-ac1d-cc3ffb4a8d8b)
+
 
 A fork of beta Eaglercraft, it runs on most browsers and has singleplayer & multiplayer.
 

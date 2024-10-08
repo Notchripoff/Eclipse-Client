@@ -2,7 +2,7 @@
 
 A fork of beta Eaglercraft, it runs on most browsers and has singleplayer & multiplayer.
 
-adding update's :D as we speak
+It says its "Old" but don't worry, its still being updated by SaiyanGonzalez01. (Because hes a geek for old versions XD)
 
 # Contributors
 

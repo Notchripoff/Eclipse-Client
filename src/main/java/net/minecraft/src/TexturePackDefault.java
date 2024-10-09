@@ -20,7 +20,7 @@ public class TexturePackDefault extends TexturePackBase {
 		} catch (IOException ioexception) {
 			ioexception.printStackTrace();
 		}
-		*/
+		
 	}
 
 	public void func_6484_b(Minecraft minecraft) {
